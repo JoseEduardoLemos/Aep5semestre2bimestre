@@ -29,7 +29,8 @@
             height: 75px;
         }
         .container-boletim {
-            background-size: 100vw 100vh;
+            height: 100vh;
+            width: 100vw;
             display: flex;
             flex-direction: column;
             align-items: stretch;
@@ -40,19 +41,26 @@
             box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
             display: flex;
             flex-wrap: wrap;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
             align-content: center;
         }
-        .content-center-no-shadow {
+        .content-center-barra {
             box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
-            color: aliceblue;
+            color: rgb(255, 248, 248);
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
             align-content: center;
-            
+        }
+        .content-center-no-shadow {
+            color: rgb(255, 248, 248);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
         }
         .hover {
             cursor: pointer;
@@ -72,11 +80,11 @@
             <img src="logo.png" height="50" class="hover" onclick="location.href='homepage.html'">
             <img src="logaout-icon.png" height="20" class="hover" onclick="location.href='index.html'">
         </div>
-        <div class="container-boletim" style="height: 900px;">                    
-            <div class="content-center-no-shadow" style="margin-left: 20px; padding-left: 20px; margin-right: 20px; border-radius: 10px; background-color: #0099ff;">
-                <span style="color: white; font-size: 24px;">Olá, Thiago Rodrigues Moraes</span>
-                <div>
-                    <table style="overflow-x:auto;"width="700px">
+        <div class="container-boletim">                    
+            <div class="content-center-barra" style="border-radius: 6px; margin-left: 20px; padding-left: 20px; margin-right: 20px; background-color: #35adfd9b;">
+                <span style="color: rgb(255, 243, 243); font-size: 24px;">Olá, THIAGO RODRIGUES MORAES</span>
+                <div style="font-size: 20px;">
+                    <table style="overflow-x:auto;"width="800px">
                         <tr>
                             <th>Instituição</th>
                             <th>CGM</th>
@@ -100,113 +108,115 @@
             <div style="margin-left:50px; margin-top:25px; color: aliceblue; font-family: 'Roboto';">
                 <span style="font-size: 48px;">Boletim</span>
             </div>
-            <div class="content-center" style="font-size: 18px; overflow-x:auto; color: aliceblue; padding-left: 20px; margin-top: 25px; margin-left: 20px; margin-right: 20px; background-color: rgb(87, 86, 86); border-radius: 10px; height: 600px;">
-                <table class="contente-center-all"width="1500px" height="500px" border="0">
-                    <tr>
-                        <th>#</th>
-                        <th>Disciplinas</th>
-                        <th>BM1</th>
-                        <th>frequência </th>
-                        <th>BM2</th>
-                        <th>frequência </th>
-                        <th>BM3</th>
-                        <th>frequência </th>
-                        <th>BM4</th>
-                        <th>frequência </th>
-                        <th>Situação</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Português</td>
-                        <td>6.5</td>
-                        <td>110/160h</td>
-                        <td>6.5</td>
-                        <td>110/160h</td>
-                        <td>6.5</td>
-                        <td>110/160h</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td style="color: rgb(64, 246, 88);">Aprovado</td>
-                    <tr>
-                        <td>2</td>
-                        <td>Matemática</td>
-                        <td>7.8</td>
-                        <td>140/160h</td>
-                        <td>7.8</td>
-                        <td>140/160h</td>
-                        <td>7.8</td>
-                        <td>140/160h</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td style="color: rgb(64, 246, 88);">Aprovado</td>
-                    </tr> 
-                    <tr>
-                        <td>3</td>
-                        <td>Inglês</td>
-                        <td>8.0</td>
-                        <td>130/160h</td>
-                        <td>8.0</td>
-                        <td>130/160h</td>
-                        <td>8.0</td>
-                        <td>130/160h</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td style="color: rgb(64, 246, 88);">Aprovado</td>
-                    </tr>   
-                    <tr>
-                        <td>4</td>
-                        <td>Geografia</td>
-                        <td>9.2</td>
-                        <td>160/160h</td>
-                        <td>9.2</td>
-                        <td>160/160h</td>
-                        <td>9.2</td>
-                        <td>160/160h</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td style="color: rgb(64, 246, 88);">Aprovado</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>História</td>
-                        <td>5.5</td>
-                        <td>110/160h</td>
-                        <td>5.5</td>
-                        <td>110/160h</td>
-                        <td>5.5</td>
-                        <td>110/160h</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td style="color: rgb(241, 55, 55);">Reprovado</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Ciências</td>
-                        <td>10.0</td>
-                        <td>160/160h</td>
-                        <td>10.0</td>
-                        <td>160/160h</td>
-                        <td>10.0</td>
-                        <td>160/160h</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td style="color: rgb(64, 246, 88);">Aprovado</td>
-                    </tr>
-                        
-                    <tr>
-                        <td>7</td>
-                        <td>Educação Física</td>
-                        <td>9.8</td>
-                        <td>160/160h</td>
-                        <td>9.8</td>
-                        <td>160/160h</td>
-                        <td>9.8</td>
-                        <td>160/160h</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td style="color: rgb(64, 246, 88);">Aprovado</td>
-                    </tr>
-                </table>
+            <div class="content-center-no-shadow">
+                <div class="content-center" style="border-radius: 8px; font-size: 20px; color: aliceblue; margin-left:25px; padding-left: 25px; margin-right: 25px; margin-top: 25px; background-color: rgb(87, 86, 86); height: 52vh; width: 75vw;">
+                    <table width="1200px" height="500px" style="overflow-x:auto;">
+                        <tr>
+                            <th>#</th>
+                            <th>Disciplinas</th>
+                            <th>BM1</th>
+                            <th>frequência </th>
+                            <th>BM2</th>
+                            <th>frequência </th>
+                            <th>BM3</th>
+                            <th>frequência </th>
+                            <th>BM4</th>
+                            <th>frequência </th>
+                            <th>Situação</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Português</td>
+                            <td>6.5</td>
+                            <td>110/160h</td>
+                            <td>6.5</td>
+                            <td>110/160h</td>
+                            <td>6.5</td>
+                            <td>110/160h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="color: rgb(64, 246, 88);">Aprovado</td>
+                        <tr>
+                            <td>2</td>
+                            <td>Matemática</td>
+                            <td>7.8</td>
+                            <td>140/160h</td>
+                            <td>7.8</td>
+                            <td>140/160h</td>
+                            <td>7.8</td>
+                            <td>140/160h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="color: rgb(64, 246, 88);">Aprovado</td>
+                        </tr> 
+                        <tr>
+                            <td>3</td>
+                            <td>Inglês</td>
+                            <td>8.0</td>
+                            <td>130/160h</td>
+                            <td>8.0</td>
+                            <td>130/160h</td>
+                            <td>8.0</td>
+                            <td>130/160h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="color: rgb(64, 246, 88);">Aprovado</td>
+                        </tr>   
+                        <tr>
+                            <td>4</td>
+                            <td>Geografia</td>
+                            <td>9.2</td>
+                            <td>160/160h</td>
+                            <td>9.2</td>
+                            <td>160/160h</td>
+                            <td>9.2</td>
+                            <td>160/160h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="color: rgb(64, 246, 88);">Aprovado</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>História</td>
+                            <td>5.5</td>
+                            <td>110/160h</td>
+                            <td>5.5</td>
+                            <td>110/160h</td>
+                            <td>5.5</td>
+                            <td>110/160h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="color: rgb(241, 55, 55);">Reprovado</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Ciências</td>
+                            <td>10.0</td>
+                            <td>160/160h</td>
+                            <td>10.0</td>
+                            <td>160/160h</td>
+                            <td>10.0</td>
+                            <td>160/160h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="color: rgb(64, 246, 88);">Aprovado</td>
+                        </tr>
+                            
+                        <tr>
+                            <td>7</td>
+                            <td>Educação Física</td>
+                            <td>9.8</td>
+                            <td>160/160h</td>
+                            <td>9.8</td>
+                            <td>160/160h</td>
+                            <td>9.8</td>
+                            <td>160/160h</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="color: rgb(64, 246, 88);">Aprovado</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </body>

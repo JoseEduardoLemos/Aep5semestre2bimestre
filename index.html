@@ -43,17 +43,19 @@
             height: 100vh;
         }
         .botaoLogin{
-            background-color:aliceblue; 
+            box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+            background-color:rgb(36, 186, 255); 
             border-radius: 4px; 
             margin-left: 20px; 
             margin-right: 20px; 
             height: 35px;
-            font-weight: bold;
-            color: rgb(0, 174, 255);
+            font-size:20px;
+            font-weight:bold;
+            color: rgb(255, 255, 255);
         }
         .botaoLogin:hover{
-            background-color: rgb(201, 227, 250);
-            color: rgb(5, 132, 190);
+            background-color: rgb(0, 168, 246);
+            color: rgb(255, 255, 255);
             cursor: pointer;
         }
         .hover {
@@ -93,9 +95,8 @@
       <div class="botaoLogin contente-center-all" onclick="location.href='homepage.html'">
           <span>Entrar</span>
       </div>
-       <div class="esqueciSenha"><p></p><a href="recuperacaoDeSenha.html" target="_blank" style="text-decoration: underline; color: rgb(255, 255, 255);">Esqueci minha senha</a></p></div> 
+       <div class="hover" onclick="location.href='recoverPassword.html'" style="margin-top: 20px; text-decoration: underline; color: rgb(255, 255, 255);">Esqueci minha senha</a></p></div> 
     </div>
 </div>
-
 </body>
 </html>
