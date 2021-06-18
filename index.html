@@ -17,22 +17,20 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto2:wght@100;300&display=swap');
         body{
             font-family: 'Roboto' !important;
-            opacity:80%;
+            opacity:100%;
             background-image: url(background-black.jpg);
             background-size: 100vw 100vh;
         }
         .caixa{
-            padding-top: 30px;
+            padding-top: 50px;
             color: aliceblue;
             width: 400px;
             height: 500px;
             box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
             float: left;
-            border: 3px solid rgb(1, 51, 75);
             border-radius: 20px;
             text-align: center;
-            background-image: linear-gradient(rgb(123, 194, 251), rgb(2, 72, 112));
-            background-color: rgb(53, 52, 52);
+            background-color:#0a4261;
         }
         .container-login{
             display: flex;
@@ -43,18 +41,19 @@
             height: 100vh;
         }
         .botaoLogin{
+            margin-top:20px;
             box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
-            background-color:rgb(36, 186, 255); 
+            background-color:#367fb0; 
             border-radius: 4px; 
             margin-left: 20px; 
             margin-right: 20px; 
             height: 35px;
-            font-size:20px;
-            font-weight:bold;
+            font-weight: bold; 
+            font-size: 18px;
             color: rgb(255, 255, 255);
         }
         .botaoLogin:hover{
-            background-color: rgb(0, 168, 246);
+            background-color:#367fb0;;
             color: rgb(255, 255, 255);
             cursor: pointer;
         }
@@ -78,15 +77,15 @@
         <b><br>de maneira fácil e muito mais rápida!</h2></b>
 </div>
 <div class="caixa">
-    <h2 style="font-weight: bolder; color: rgb(255, 255, 255);">BEM-VINDO</h2>
-    <h5>CGM se for aluno, CPF se for responsável</h5>
+    <h2 style="font-weight: bolder; color: rgb(255, 255, 255);">Login</h2>
+    <h5 style="margin-top: 30px">CGM se for aluno, CPF se for responsável</h5>
 
-    <div style="padding-left: 20px; padding-right: 20px; margin-top: 20px;">
+    <div style="padding-left: 20px; padding-right: 20px; margin-top: 30px;">
         <input type="email" class="form-control" id="floatingInput" placeholder="CGM ou CPF">
         <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" style="margin-top: 10px;">
     </div>
 
-      <div>
+      <div style="margin-top: 10px;">
         <input type="checkbox" value="" id="flexCheckDefault " style="margin-top: 20px;" >
         <label>
           Manter-me conectado
